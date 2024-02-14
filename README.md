@@ -11,7 +11,7 @@ To deploy this code on Google Sheets Apps Scripts, follow the steps below:
    - Click on Extensions > Apps Script to open the Google Apps Script editor.
 
 2. **Set up the Script**:
-   - Within the script editor, paste the provided code.
+   - Within the script editor, paste the provided code from the file ttn-webhook-google-sheet-integration
    - Delete any existing code in the script editor.
    - Note, if you are collecting different sensor parameters then these: 'dev_eui', 'distance', 'humidity', 'pressure', 'temperature', 'vdd', 'date_time', 'current_time', then you will need to update this code.
    - Save your script by clicking the Save button.
@@ -26,15 +26,23 @@ To deploy this code on Google Sheets Apps Scripts, follow the steps below:
    - Copy the 'Web App URL' generated after deployment.
    - This URL will be used as the endpoint for sending JSON data from the Things Network. 
 
-6. **Form/Script Integration**:
-   - Use the copied URL as the action for your form or script that will be sending JSON data.
+6. **Form/Script Integration - Configuring TTN Web Hook**:
+The Things Network (TTN) allows for the integration of webhooks, which enable the forwarding of sensor data to external services such as Google Sheets. Here's a brief overview of how to configure a webhook for a TTN application created to forward data to the Google Sheet Apps Script.
+   - Log into Things Network Sandbox  https://eu1.cloud.thethings.network/oauth/login , and Click the Application Created
+   - Click Integrations and Webhook in the left hand menu. Then click Add Webhook.
+   - Select Custom Webhook on the next Screen.
+   - Enter a Web Hook ID
+   - Select Web Hook Format: JSON
+   - Copy the Apps Script URL created above into Base URL. 
+
+The next sensor reading received by the Things Network will be sent to the Google Sheet. 
 
 ## Testing with CURL
 
 Once deployed, you can test the script using CURL commands. Here's how:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d @sample_ttn_json.json  <WEB_APP_URL>
+curl -X POST -H "Content-Type: application/json" -d @pn_uplink_google.json  <WEB_APP_URL>
 ```
 
 Replace <WEB_APP_URL> with the URL copied after deploying the web app - Web App URL.
@@ -46,11 +54,11 @@ Here's an example JSON payload you can use for testing:
 
 ```bash
 {
-  "end_device_ids_device_id": "eui-000db8395365333d",
-  "deveui": 35,
-  "uplink_message_rx_metadata_1_time": "2024-01-30T10:26:17.178Z",
-  "uplink_message_decoded_payload_temp": 21.77,
-  "end_device_ids_join_eui": "000db5390367365d"
+  "dev_eui": "eui-000db8395365333d",
+  "distance": 3500,
+  "humidity": "50",
+  "temperature": 21.77,
+  "vdd": "3445"
 }
 ```
 
