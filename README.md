@@ -34,7 +34,7 @@ To deploy this code on Google Sheets Apps Scripts, follow the steps below:
 Once deployed, you can test the script using CURL commands. Here's how:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d @pn_uplink_google.json  <WEB_APP_URL>
+curl -X POST -H "Content-Type: application/json" -d @sample_ttn_json.json  <WEB_APP_URL>
 ```
 
 Replace <WEB_APP_URL> with the URL copied after deploying the web app - Web App URL.
