@@ -1,0 +1,109 @@
+{
+  "name": "as.up.data.forward",
+  "time": "2024-02-07T08:38:35.657318347Z",
+  "identifiers": [
+    {
+      "device_ids": {
+        "device_id": "<device_id>",
+        "application_ids": {
+          "application_id": "<application_id>"
+        },
+        "dev_eui": "<dev_eui>",
+        "join_eui": "<join_eui>",
+        "dev_addr": "<dev_addr>"
+      }
+    }
+  ],
+  "data": {
+    "@type": "type.googleapis.com/ttn.lorawan.v3.ApplicationUp",
+    "end_device_ids": {
+      "device_id": "<device_id>",
+      "application_ids": {
+        "application_id": "<application_id>"
+      },
+      "dev_eui": "<dev_eui>",
+      "join_eui": "<join_eui>",
+      "dev_addr": "<dev_addr>"
+    },
+    "correlation_ids": [
+      "<correlation_id>"
+    ],
+    "received_at": "2024-02-07T08:38:35.653524448Z",
+    "uplink_message": {
+      "session_key_id": "<session_key_id>",
+      "f_port": 5,
+      "f_cnt": 463,
+      "frm_payload": "<frm_payload>",
+      "decoded_payload": {
+        "distance": <distance>,
+        "humidity": <humidity>,
+        "pressure": <pressure>,
+        "temperature": <temperature>,
+        "vdd": <vdd>
+      },
+      "rx_metadata": [
+        {
+          "gateway_ids": {
+            "gateway_id": "<gateway_id>"
+          },
+          "packet_broker": {
+            "message_id": "<message_id>",
+            "forwarder_net_id": "<forwarder_net_id>",
+            "forwarder_tenant_id": "<forwarder_tenant_id>",
+            "forwarder_cluster_id": "<forwarder_cluster_id>",
+            "forwarder_gateway_eui": "<forwarder_gateway_eui>",
+            "forwarder_gateway_id": "<forwarder_gateway_id>",
+            "home_network_net_id": "<home_network_net_id>",
+            "home_network_tenant_id": "<home_network_tenant_id>",
+            "home_network_cluster_id": "<home_network_cluster_id>"
+          },
+          "time": "2021-02-28T17:25:12.606998Z",
+          "rssi": <rssi>,
+          "channel_rssi": <channel_rssi>,
+          "snr": <snr>,
+          "uplink_token": "<uplink_token>",
+          "received_at": "2024-02-07T08:38:35.427387614Z"
+        }
+      ],
+      "settings": {
+        "data_rate": {
+          "lora": {
+            "bandwidth": <bandwidth>,
+            "spreading_factor": <spreading_factor>,
+            "coding_rate": "<coding_rate>"
+          }
+        },
+        "frequency": "<frequency>"
+      },
+      "received_at": "2024-02-07T08:38:35.445109961Z",
+      "consumed_airtime": "<consumed_airtime>",
+      "version_ids": {
+        "brand_id": "<brand_id>",
+        "model_id": "<model_id>",
+        "hardware_version": "<hardware_version>",
+        "firmware_version": "<firmware_version>",
+        "band_id": "<band_id>"
+      },
+      "network_ids": {
+        "net_id": "<net_id>",
+        "ns_id": "<ns_id>",
+        "tenant_id": "<tenant_id>",
+        "cluster_id": "<cluster_id>",
+        "cluster_address": "<cluster_address>"
+      }
+    }
+  },
+  "correlation_ids": [
+    "<correlation_id>"
+  ],
+  "origin": "<origin>",
+  "context": {
+    "tenant-id": "<tenant-id>"
+  },
+  "visibility": {
+    "rights": [
+      "<rights>"
+    ]
+  },
+  "unique_id": "<unique_id>"
+}
