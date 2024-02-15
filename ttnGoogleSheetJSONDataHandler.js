@@ -39,6 +39,22 @@ function dateTime() {
   return currentdate;
 }
 
+function currentDateUSA() {
+  // Create a new Date object
+  var currentTime = new Date();
+
+  // Get the current month, day, and year
+  var currentMonth = currentTime.getMonth() + 1; // Add 1 because getMonth() returns zero-based values
+  var currentDay = currentTime.getDate();
+  var currentYear = currentTime.getFullYear();
+
+
+  // Format the date
+  var formattedDate = currentMonth + '/' + currentDay + '/' + currentYear;
+  
+  return formattedDate;
+}
+
 function handleResponseV2(e) {
   var lock = LockService.getPublicLock();
   lock.waitLock(30000); // wait 30 seconds before conceding defeat.
@@ -55,7 +71,7 @@ function handleResponseV2(e) {
     if (!sheet) {
       sheet = doc.insertSheet(devEui);
       // Set headers if the sheet is newly created
-      sheet.appendRow(['dev_eui', 'distance', 'humidity', 'pressure', 'temperature', 'vdd', 'date_time', 'current_time']);
+      sheet.appendRow(['dev_eui', 'distance', 'humidity', 'pressure', 'temperature', 'vdd', 'date_time', 'current_time', 'usa_date']);
     }
     
     var nextRow = sheet.getLastRow() + 1; // get next row
@@ -70,6 +86,7 @@ function handleResponseV2(e) {
       jsonData.vdd,
       dateTime(),
       currentTime(),
+      currentDateUSA(),
       // Add more parameters as needed
     ];
 
