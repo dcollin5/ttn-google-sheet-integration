@@ -2,6 +2,9 @@
 
 We will employ Google Sheets for visualising data collected from the Things Network. Google Sheets, a web-based spreadsheet application developed by Google, facilitates real-time collaboration, enabling easy sharing and graphing of flood datasets across community groups. Note, the script here is inspired by [this gist](https://gist.github.com/bmcbride/7069aebd643944c9ee8b) and [this tutorial](https://blog.squix.org/2017/07/thethingsnetwork-how-to-use-google-spreadsheet-to-log-data.html). An overview of Google Sheets is outside the scope of this tutorial. There are, however, plenty of tutorials available online.  To prepare Google Sheets to receive Things Network Sensor readings, we need to create a Google Sheets Apps Script. Here are the steps to get started:
 
+<img width="782" alt="Screenshot 2024-02-15 at 10 04 59" src="https://github.com/dcollin5/ttn-google-sheet-integration/assets/51931924/83d0a2ea-d9d9-4e83-bbc1-6178ab1f5c80">
+
+
 ## Deployment Instructions
 
 To deploy this code on Google Sheets Apps Scripts, follow the steps below:
