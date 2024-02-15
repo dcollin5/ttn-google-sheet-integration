@@ -11,7 +11,7 @@ To deploy this code on Google Sheets Apps Scripts, follow the steps below:
    - Click on Extensions > Apps Script to open the Google Apps Script editor.
 
 2. **Set up the Script**:
-   - Within the script editor, paste the provided code from the file ttn-webhook-google-sheet-integration
+   - Within the script editor, paste the provided code from the file ttnGoogleSheetJSONDataHandler.js. Note, if you want all TTN Parameters stored, use the ttnHandleAllJSON.js file
    - Delete any existing code in the script editor.
    - Note, if you are collecting different sensor parameters then these: 'dev_eui', 'distance', 'humidity', 'pressure', 'temperature', 'vdd', 'date_time', 'current_time', then you will need to update this code.
    - Save your script by clicking the Save button.
