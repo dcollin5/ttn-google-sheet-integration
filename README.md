@@ -79,4 +79,4 @@ The following set of YouTube videos show how to add:
 
 4. [How to reset Things Network Device Nonce - in case the device loses connectivity to the Things Network](https://youtu.be/JatonWsU-rw)
 
-[General The Things Network (TTN) tutorial video](https://www.youtube.com/watch?v=Par4-Gio8po) 
+5. [General The Things Network (TTN) tutorial video for adding LoRaWAN IoT devices and gateways](https://www.youtube.com/watch?v=Par4-Gio8po) 
