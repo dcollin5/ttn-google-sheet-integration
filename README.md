@@ -71,11 +71,11 @@ This markdown-formatted README file provides clear instructions on how to deploy
 
 The following set of YouTube videos show how to add:
 
-1. [Log into the Things Network and Add an Elsys Ultrasonic Sensor](https://www.youtube.com/watch?v=e1_4EG8niEI)
+1. [Log into the Things Network and Add an Elsys Ultrasonic Sensor](https://youtu.be/e1_4EG8niEI)
 
 2. [Setting up a Things Network Webhook and the AppScript in Google Sheets for Elsys Ultrasonic Sensor](https://www.youtube.com/watch?v=7KsJ0Zh9yGU)
 
-3. [Sending REST API to Google Sheets App Script for processing data sent from the Things Network](https://www.youtube.com/watch?v=6FiKC5Ka12g)
+3. [Sending REST API to Google Sheets App Script for processing data sent from the Things Network](https://youtu.be/6FiKC5Ka12g)
 
 4. [How to reset Things Network Device Nonce - in case the device loses connectivity to the Things Network](https://youtu.be/JatonWsU-rw)
 
